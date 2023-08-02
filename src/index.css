@@ -15,6 +15,9 @@ body {
 @media (max-width:700px) {
     .container {
         flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
     }
 }
 
@@ -65,7 +68,6 @@ body {
     text-align: center;
     border-radius: 5px;
 }
-
 .user-table tr th {
     padding: 10px;
     background-color: rgb(240, 240, 232);
