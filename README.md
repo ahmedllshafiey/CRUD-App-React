@@ -1,7 +1,7 @@
 # CRUD App
 CRUD APP that performs CRUD operation using hooks.
 
-## [View Demo](https://note-app-llshafiey.vercel.app/)
+## [View Demo](https://crud-app-llshafiey.vercel.app/)
 
 ## Technologies
 * React
