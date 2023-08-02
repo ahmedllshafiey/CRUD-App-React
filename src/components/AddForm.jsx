@@ -18,7 +18,7 @@ const AddForm = (props) => {
                         if (!user.name || !user.username) return
 
                         props.addUser(user)
-                        setUser(initialFormState)
+                        setUser(initFormState)
                     }}
                 >
                     <input
