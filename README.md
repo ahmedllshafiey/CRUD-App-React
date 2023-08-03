@@ -1,8 +1,6 @@
 # CRUD App
 CRUD APP that performs CRUD operation using hooks.
 
-## [View Demo](https://crud-app-llshafiey.vercel.app/)
-
 ## Technologies
 * React
 * Vanilla CSS
