@@ -26,29 +26,35 @@ const EditForm = props => {
                     props.updateUser(user.id, user)
                 }}
             >
-                <label className="label">Name</label>
-                <input
-                    className="input-text"
-                    type="text"
-                    name="name"
-                    value={user.name}
-                    onChange={handleInputChange}
-                />
-                <label className="label">Username</label>
-                <input
-                    className="input-text"
-                    type="text"
-                    name="username"
-                    value={user.username}
-                    onChange={handleInputChange}
-                />
-                <button className="btn-add" >Update user</button>
-                <button 
-                    onClick={() => props.setEditing(false)} 
-                    className="btn-add"
-                >
-                    Cancel
-                </button>
+                <div className="container edit">
+                    <label className="label">Name</label>
+                    <input
+                        className="input-text"
+                        type="text"
+                        name="name"
+                        value={user.name}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div className="container edit">
+                    <label className="label">Username</label>
+                    <input
+                        className="input-text"
+                        type="text"
+                        name="username"
+                        value={user.username}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div className="container">
+                    <button className="btn-add" >Update user</button>
+                    <button
+                        onClick={() => props.setEditing(false)}
+                        className="btn-add"
+                    >
+                        Cancel
+                    </button>
+                </div>
             </form>
         </div>
     )

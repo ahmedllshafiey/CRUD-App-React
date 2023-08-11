@@ -24,8 +24,9 @@ function App() {
 
   const deleteUser = (id) => {
     setEditing(false);
-    setUsers(users.filter(user => user.id !== id))
+    setUsers(users.filter(user => user.id !== id));
   }
+
 
   const updateUser = (id, updatedUser) => {
     setEditing(false)
@@ -41,6 +42,7 @@ function App() {
     <>
       <h1 className="title">CRUD APP</h1>
       <div className="container">
+        <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
         {editing ? (
           <>
             <EditForm
@@ -55,7 +57,6 @@ function App() {
             <AddForm addUser={addUser} />
           </>
         )}
-        <UserTable users={users} editRow={editRow} />
       </div>
     </>
   )
