@@ -1,3 +1,4 @@
+/* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;500;900&family=Poppins:wght@500&display=swap');
 
 * {
@@ -18,14 +19,14 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
 }
 
 .title {
     text-align: center;
     color: #3498db;
-    font-size: 50px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -41,7 +42,6 @@ body {
 }
 
 .input-text {
-    height: 40px;
     width: 100%;
     border: black solid;
 }
@@ -72,11 +72,12 @@ body {
     border-radius: 5px;
     width: 100%;
     background-color: #ecf0f1;
+    overflow-x: auto;
 }
 
 .user-table th,
 .user-table td {
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     font-family: 'Noto Serif', serif;
     border: black solid;
@@ -88,11 +89,13 @@ body {
 }
 
 .edit-label {
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 15px;
 }
 
 .input-set {
@@ -102,9 +105,52 @@ body {
 }
 
 .btn-edit {
-    padding: 20px;
+    padding: 15px;
 }
 
 .up-btn {
-    height: 74px;
+    height: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .input-text,
+    .btn-add,
+    .btn,
+    .label {
+        margin: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .input-text {
+        height: 30px;
+    }
+
+    .edit-label {
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    .btn-edit {
+        padding: 10px;
+    }
+
+    .up-btn {
+        height: 40px;
+    }
+}
+
+.inputs {
+    display: flex;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
 }

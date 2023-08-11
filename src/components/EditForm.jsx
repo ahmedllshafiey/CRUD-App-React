@@ -1,32 +1,30 @@
-import React, { useState, useEffect } from 'react'
+// EditForm.js
+import React, { useState, useEffect } from 'react';
 
-const EditForm = props => {
-    const [user, setUser] = useState(props.currentUser)
+const EditForm = (props) => {
+    const [user, setUser] = useState(props.currentUser);
 
-    useEffect(
-        () => {
-            setUser(props.currentUser)
-        },
-        [props]
-    )
+    useEffect(() => {
+        setUser(props.currentUser);
+    }, [props]);
 
-    const handleInputChange = event => {
-        const { name, value } = event.target
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
 
-        setUser({ ...user, [name]: value })
-    }
+        setUser({ ...user, [name]: value });
+    };
 
     return (
         <div className="form-area">
             <form
                 className="form-input"
-                onSubmit={event => {
-                    event.preventDefault()
+                onSubmit={(event) => {
+                    event.preventDefault();
 
-                    props.updateUser(user.id, user)
+                    props.updateUser(user.id, user);
                 }}
             >
-                <div className="container">
+                <div className="inputs">
                     <div className="input-set">
                         <label className="label edit-label">Name</label>
                         <input
@@ -48,18 +46,18 @@ const EditForm = props => {
                         />
                     </div>
                 </div>
-                <div className="container">
-                    <button className="btn-add edit-label up-btn" >Update user</button>
+                <div className="btn-container">
+                    <button className="btn-add">Update user</button>
                     <button
                         onClick={() => props.setEditing(false)}
-                        className="btn-add edit-label up-btn"
+                        className="btn-add"
                     >
                         Cancel
                     </button>
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default EditForm
+export default EditForm;
