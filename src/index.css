@@ -37,10 +37,7 @@ body {
     padding: 15px;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #ecf0f1;
-    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .input-text {
@@ -90,6 +87,24 @@ body {
     color: #fff;
 }
 
-.edit {
-    justify-content: flex-start;
+.edit-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.input-set {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn-edit {
+    padding: 20px;
+}
+
+.up-btn {
+    height: 74px;
 }
