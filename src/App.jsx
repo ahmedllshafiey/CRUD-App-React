@@ -42,21 +42,21 @@ function App() {
     <>
       <h1 className="title">CRUD APP</h1>
       <div className="container">
-        <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
-        {editing ? (
-          <>
+        <div className="table-container">
+          <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
+        </div>
+        <div className="form-container">
+          {editing ? (
             <EditForm
               editing={editing}
               setEditing={setEditing}
               currentUser={currentUser}
               updateUser={updateUser}
             />
-          </>
-        ) : (
-          <>
+          ) : (
             <AddForm addUser={addUser} />
-          </>
-        )}
+          )}
+        </div>
       </div>
     </>
   )
