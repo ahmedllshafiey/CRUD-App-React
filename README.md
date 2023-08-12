@@ -6,6 +6,7 @@ CRUD APP that performs CRUD operation using hooks.
 * Vanilla CSS
 * HTML 5
 * Vite
+* React Hooks
 
 ## Features
 Perform Basic CRUD Operations
