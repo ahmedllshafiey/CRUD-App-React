@@ -6,6 +6,7 @@ CRUD APP that performs CRUD operation using hooks.
 * Vanilla CSS
 * HTML 5
 * Vite
+* React Hooks
 
 ## Features
 Perform Basic CRUD Operations
@@ -17,4 +18,3 @@ Perform Basic CRUD Operations
 
 ## License
 This project is open source and available under the [MIT License](https://github.com/ahmedllshafiey/CRUD-App-React/blob/main/LICENSE).
-
