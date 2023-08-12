@@ -18,4 +18,3 @@ Perform Basic CRUD Operations
 
 ## License
 This project is open source and available under the [MIT License](https://github.com/ahmedllshafiey/CRUD-App-React/blob/main/LICENSE).
-
